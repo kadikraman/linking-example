@@ -1,6 +1,7 @@
 import { Stack } from "expo-router";
-import "../global.css";
+import "../../global.css";
 import { Platform } from "react-native";
+import { HeaderNav } from "../components/HeaderNav";
 
 export default function RootLayout() {
   return (
@@ -8,7 +9,11 @@ export default function RootLayout() {
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen
         name="products/[productId]"
-        options={Platform.OS !== "web" ? { presentation: "modal" } : undefined}
+        options={
+          Platform.OS === "web"
+            ? { headerRight: () => <HeaderNav />, title: "" }
+            : { presentation: "modal" }
+        }
       />
     </Stack>
   );

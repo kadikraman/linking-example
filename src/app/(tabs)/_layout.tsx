@@ -1,7 +1,8 @@
-import { Link, Stack, Tabs } from "expo-router";
-import { Platform, Text, View } from "react-native";
+import { Stack, Tabs } from "expo-router";
+import { Platform, Text } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Feather from "@expo/vector-icons/Feather";
+import { HeaderNav } from "../../components/HeaderNav";
 
 export default function AppLayout() {
   if (Platform.OS === "web") {
@@ -12,22 +13,11 @@ export default function AppLayout() {
           options={{
             headerLeft: () => (
               <Text className="ml-6 font-bold tracking-widest text-lg">
-                My Shop
+                My Shop <Text className="font-normal"> | Home</Text>
               </Text>
             ),
             headerTitle: "",
-            headerRight: () => (
-              <View className="mr-6 flex-row gap-4">
-                <Text className="font-bold underline text-lg tracking-wider">
-                  Home
-                </Text>
-                <Link href="/products">
-                  <Text className="text-lg tracking-wider font-bold text-gray-500">
-                    Shop
-                  </Text>
-                </Link>
-              </View>
-            ),
+            headerRight: () => <HeaderNav />,
           }}
         />
         <Stack.Screen
@@ -39,18 +29,7 @@ export default function AppLayout() {
               </Text>
             ),
             headerTitle: "",
-            headerRight: () => (
-              <View className="mr-6 flex-row gap-4">
-                <Link href="/">
-                  <Text className="text-lg tracking-wider font-bold text-gray-500">
-                    Home
-                  </Text>
-                </Link>
-                <Text className="font-bold underline text-lg tracking-wider">
-                  Shop
-                </Text>
-              </View>
-            ),
+            headerRight: () => <HeaderNav />,
           }}
         />
       </Stack>
