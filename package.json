@@ -5,16 +5,18 @@
   "scheme": "linking-example",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
     "lint": "eslint ."
   },
   "dependencies": {
     "expo": "~52.0.27",
     "expo-constants": "~17.0.4",
+    "expo-dev-client": "~5.0.10",
     "expo-linking": "~7.0.4",
     "expo-router": "~4.0.17",
+    "expo-splash-screen": "~0.29.21",
     "expo-status-bar": "~2.0.1",
     "nativewind": "^4.1.23",
     "react": "18.3.1",
