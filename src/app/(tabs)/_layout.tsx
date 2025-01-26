@@ -25,7 +25,7 @@ export default function AppLayout() {
           options={{
             headerLeft: () => (
               <Text className="ml-6 font-bold tracking-widest text-lg">
-                My Shop <Text className="font-normal"> | Products</Text>
+                My Shop <Text className="font-normal"> | Shop</Text>
               </Text>
             ),
             headerTitle: "",
