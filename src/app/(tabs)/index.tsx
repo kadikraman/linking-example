@@ -1,15 +1,37 @@
+import { Image } from "expo-image";
 import { Link } from "expo-router";
-import { StatusBar } from "expo-status-bar";
-import { ScrollView, Text } from "react-native";
+import { Pressable, Text, View } from "react-native";
 
 export default function App() {
   return (
-    <ScrollView>
-      <Text className="text-cyan-500">
-        Open up App.tsx to start working on your app!
-      </Text>
-      <Link href="products/123"> products/123</Link>
-      <StatusBar style="auto" />
-    </ScrollView>
+    <View className="flex-1">
+      <View className="flex-1 justify-evenly">
+        <View className="bg-sky-700 flex-2 h-[50%] items-center justify-center">
+          <Image
+            source={require("../../../assets/buildings.jpeg")}
+            style={{
+              height: "100%",
+              width: "100%",
+              transform: [{ rotate: "180deg" }],
+            }}
+          />
+        </View>
+        <View className="bg-sky-700 flex-2 h-[50%] items-center justify-center">
+          <Image
+            source={require("../../../assets/buildings.jpeg")}
+            style={{ height: "100%", width: "100%" }}
+          />
+        </View>
+      </View>
+      <View className="absolute top-0 bottom-0 right-0 left-0 items-center justify-center flex-1">
+        <Link href="/products" asChild>
+          <Pressable className="bg-black p-5 rounded">
+            <Text className="text-white font-bold tracking-widest uppercase ">
+              Start shopping
+            </Text>
+          </Pressable>
+        </Link>
+      </View>
+    </View>
   );
 }

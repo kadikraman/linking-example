@@ -7,7 +7,7 @@ export default function ProductDetailsScreen() {
   return (
     <ScrollView>
       <Text className="text-cyan-500">{JSON.stringify(params, null, " ")}</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="dark" />
     </ScrollView>
   );
 }

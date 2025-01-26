@@ -14,6 +14,7 @@
     "expo": "~52.0.27",
     "expo-constants": "~17.0.4",
     "expo-dev-client": "~5.0.10",
+    "expo-image": "~2.0.4",
     "expo-linking": "~7.0.4",
     "expo-router": "~4.0.17",
     "expo-splash-screen": "~0.29.21",
