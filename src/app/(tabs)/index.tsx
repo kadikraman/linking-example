@@ -8,7 +8,7 @@ export default function App() {
       <View className="flex-1 justify-evenly">
         <View className="bg-sky-700 flex-2 h-[50%] items-center justify-center">
           <Image
-            source={require("../../../assets/buildings.jpeg")}
+            source={require("../../../assets/buildings.jpg")}
             style={{
               height: "100%",
               width: "100%",
@@ -18,7 +18,7 @@ export default function App() {
         </View>
         <View className="bg-sky-700 flex-2 h-[50%] items-center justify-center">
           <Image
-            source={require("../../../assets/buildings.jpeg")}
+            source={require("../../../assets/buildings.jpg")}
             style={{ height: "100%", width: "100%" }}
           />
         </View>

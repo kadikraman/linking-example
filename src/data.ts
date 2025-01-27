@@ -47,4 +47,28 @@ export default [
     imageSource: require("../assets/products/notebook.jpeg"),
     price: 15,
   },
+  {
+    id: "7",
+    name: 'Mobile Phone Case: "Quantum Shield"',
+    description:
+      "Shock-resistant case with holographic circuit pattern. Built-in RFID blocking and wireless charging compatibility. Military-grade protection for tech-savvy users.",
+    imageSource: require("../assets/products/case.jpeg"),
+    price: 20,
+  },
+  {
+    id: "8",
+    name: 'Plant: "Synapse Succulent"',
+    description:
+      "Rare algorithmic-patterned succulent that mimics neural network growth. Air-purifying plant with minimal care requirements. Perfect for modern tech workspaces.",
+    imageSource: require("../assets/products/plant.jpeg"),
+    price: 5,
+  },
+  {
+    id: "9",
+    name: 'Coffee Mug: "Data Brew"',
+    description:
+      "Thermal ceramic mug with temperature-responsive color-changing circuit board design. Smart sensor tracks caffeine intake and displays drink temperature digitally.",
+    imageSource: require("../assets/products/mug.jpeg"),
+    price: 12,
+  },
 ];

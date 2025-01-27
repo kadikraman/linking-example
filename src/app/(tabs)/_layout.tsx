@@ -1,4 +1,4 @@
-import { Stack, Tabs } from "expo-router";
+import { Link, Stack, Tabs } from "expo-router";
 import { Platform, Text } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Feather from "@expo/vector-icons/Feather";
@@ -12,9 +12,11 @@ export default function AppLayout() {
           name="index"
           options={{
             headerLeft: () => (
-              <Text className="ml-6 font-bold tracking-widest text-lg">
-                My Shop <Text className="font-normal"> | Home</Text>
-              </Text>
+              <Link href="/">
+                <Text className="ml-6 font-bold tracking-widest text-lg">
+                  My Shop <Text className="font-normal"> | Home</Text>
+                </Text>
+              </Link>
             ),
             headerTitle: "",
             headerRight: () => <HeaderNav />,
@@ -24,9 +26,11 @@ export default function AppLayout() {
           name="products"
           options={{
             headerLeft: () => (
-              <Text className="ml-6 font-bold tracking-widest text-lg">
-                My Shop <Text className="font-normal"> | Shop</Text>
-              </Text>
+              <Link href="/">
+                <Text className="ml-6 font-bold tracking-widest text-lg">
+                  My Shop <Text className="font-normal"> | Shop</Text>
+                </Text>
+              </Link>
             ),
             headerTitle: "",
             headerRight: () => <HeaderNav />,
