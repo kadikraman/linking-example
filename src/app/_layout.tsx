@@ -2,7 +2,6 @@ import { Stack } from "expo-router";
 import "../../global.css";
 import { Platform } from "react-native";
 import { HeaderNav } from "../components/HeaderNav";
-import { StatusBar } from "expo-status-bar";
 import data from "../data";
 
 export const unstable_settings = {
@@ -12,7 +11,6 @@ export const unstable_settings = {
 export default function RootLayout() {
   return (
     <Stack>
-      <StatusBar style="dark" />
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen
         name="products/[productId]"
