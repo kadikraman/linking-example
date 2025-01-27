@@ -5,6 +5,10 @@ import { HeaderNav } from "../components/HeaderNav";
 import { StatusBar } from "expo-status-bar";
 import data from "../data";
 
+export const unstable_settings = {
+  initialRouteName: "(tabs)",
+};
+
 export default function RootLayout() {
   return (
     <Stack>

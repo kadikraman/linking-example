@@ -2,6 +2,7 @@
   "expo": {
     "name": "Linking example",
     "slug": "linking-example",
+    "scheme": "linking-example",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon-light.png",
