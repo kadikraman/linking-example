@@ -10,7 +10,7 @@ export function HeaderNav() {
   const pathName = usePathname();
 
   return (
-    <View className="mr-6 flex-row gap-4">
+    <View className="mr-6 flex-row gap-4 sm:inline-flex hidden">
       {pages.map((page) => {
         if (pathName === page.href) {
           return (

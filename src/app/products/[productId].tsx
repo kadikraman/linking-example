@@ -1,6 +1,13 @@
 import { Link, useLocalSearchParams } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { Pressable, ScrollView, Text, View } from "react-native";
+import {
+  Platform,
+  Pressable,
+  ScrollView,
+  Text,
+  useWindowDimensions,
+  View,
+} from "react-native";
 import data from "../../data";
 import { Image } from "expo-image";
 
@@ -8,6 +15,7 @@ export default function ProductDetailsScreen() {
   const params = useLocalSearchParams();
   const productId = params?.productId;
   const product = data.find((product) => product.id === productId);
+  const { width } = useWindowDimensions();
 
   if (!product) {
     return (
@@ -27,11 +35,11 @@ export default function ProductDetailsScreen() {
   }
 
   return (
-    <ScrollView contentContainerClassName="items-center">
-      <View className="flex-col md:flex-row max-w-screen-lg md:mt-8 items-center">
+    <ScrollView contentContainerClassName="items-center  md:px-4">
+      <View className="flex-col md:flex-row max-w-screen-lg md:mt-8 items-center md:items-start flex-1">
         <Image
           source={product.imageSource}
-          style={{ height: 400, width: 500 }}
+          style={Platform.OS !== "web" ? { height: 400, width } : undefined}
           className="md:rounded-lg h-[400px] md:w-[500px] w-full"
         />
         <View className="flex-1 p-6">
