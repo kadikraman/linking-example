@@ -41,6 +41,15 @@
           "imageWidth": 150
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6f6bd23b-e14a-4c44-b36b-be0ecdca9549"
+      }
+    },
+    "owner": "expokadi"
   }
 }
