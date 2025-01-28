@@ -15,7 +15,8 @@
         "tinted": "./assets/icon-tinted.png"
       },
       "supportsTablet": true,
-      "bundleIdentifier": "com.expokadi.linking-example"
+      "bundleIdentifier": "com.expokadi.linking-example",
+      "associatedDomains": ["applinks:linking-example.expo.app"]
     },
     "android": {
       "adaptiveIcon": {
