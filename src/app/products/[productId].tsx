@@ -14,6 +14,7 @@ import { Image } from "expo-image";
 export default function ProductDetailsScreen() {
   const params = useLocalSearchParams();
   const productId = params?.productId;
+  const isSale = params?.sale === "true";
   const product = data.find((product) => product.id === productId);
   const { width } = useWindowDimensions();
 
@@ -44,9 +45,20 @@ export default function ProductDetailsScreen() {
         />
         <View className="flex-1 p-6">
           <Text className="text-2xl font-bold">{product.name}</Text>
-          <Text className="text-gray-500 text-xl mb-4">
-            ${product.price}.00
-          </Text>
+          {isSale ? (
+            <View className="flex-row gap-2">
+              <Text className="text-red-400 line-through text-xl mb-4">
+                ${product.price}.00
+              </Text>
+              <Text className="text-gray-600 text-xl mb-4 font-bold">
+                ${product.price - 5}.00
+              </Text>
+            </View>
+          ) : (
+            <Text className="text-gray-500 text-xl mb-4">
+              ${product.price}.00
+            </Text>
+          )}
           <Text className="leading-8 text-lg mb-6">{product.description}</Text>
           <Pressable
             className="bg-black rounded px-4 py-2 self-start"
