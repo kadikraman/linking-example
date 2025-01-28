@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appID": "XQAX5LF48P.com.expokadi.linking-example",
+        "paths": ["/products/*"]
+      }
+    ]
+  }
+}
