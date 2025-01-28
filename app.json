@@ -25,7 +25,8 @@
       "package": "com.expokadi.linkingexample"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "output": "server"
     },
     "plugins": [
       "expo-router",
