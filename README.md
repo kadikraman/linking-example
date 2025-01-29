@@ -27,3 +27,41 @@ The following links were used in the video:
 2. **PLP** (opens app): https://linking-example.expo.app/products
 3. **PDP** (opens app): https://linking-example.expo.app/products/1
 4. **PDP** with URL params (opens app with a sale): https://linking-example.expo.app/products/1?sale=true
+
+## Run this project locally
+
+### 🔗 Website
+```sh
+yarn
+npx expo start --web
+```
+
+### 🍏 iOS app
+
+Build locally:
+
+```sh
+yarn
+npx expo run:ios
+```
+
+Or to build on [EAS](https://docs.expo.dev/build/introduction/), remove the `projectId` and `bundleIdentifier` from `app.json`, then
+```sh
+npm i -g eas-cli
+eas build --platform ios --profile development # or preview
+```
+
+### 🤖 Android app
+
+Build locally:
+
+```sh
+yarn
+npx expo run:android
+```
+
+Or to build on [EAS](https://docs.expo.dev/build/introduction/), remove the `projectId` from `app.json`, then
+```sh
+npm i -g eas-cli
+eas build --platform android --profile development # or preview
+```
