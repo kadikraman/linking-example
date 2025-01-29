@@ -4,6 +4,9 @@ This is an example project, demonstrating how to set up [iOS Universal Links](ht
 
 See the corresponding YouTube Video here. (TODO)
 
+<img width="1368" alt="Screenshot 2025-01-29 at 14 48 40" src="https://github.com/user-attachments/assets/0bb6326c-a3e0-4bbe-94b7-05604c552261" />
+
+
 ## iOS
 
 - [Expo](https://docs.expo.dev/linking/ios-universal-links/) Documentation
@@ -16,22 +19,11 @@ See the corresponding YouTube Video here. (TODO)
 
 ## Try it yourself
 
-The website is deployed [here](https://linking-example.expo.app).
-
-The Android Internal distribution build can be downloaded [here](https://expo.dev/accounts/expokadi/projects/linking-example/builds/7c4b06ca-8914-4bf1-94ed-c6b76b706c88).
-
-The iOS TestFlight build can be downloaded here. (TODO)
+[Website](https://linking-example.expo.app) | iOS app | [Andorid app](https://expo.dev/accounts/expokadi/projects/linking-example/builds/7c4b06ca-8914-4bf1-94ed-c6b76b706c88)
 
 The following links were used in the video:
 
-**Home page (no linking)**
-https://linking-example.expo.app
-
-**PLP (opens app)**
-https://linking-example.expo.app/products
-
-**PDP (opens app)**
-https://linking-example.expo.app/products/1
-
-**PDP with URL params**
-https://linking-example.expo.app/products/1?sale=true
+1. **Home page** (opens website): https://linking-example.expo.app
+2. **PLP** (opens app): https://linking-example.expo.app/products
+3. **PDP** (opens app): https://linking-example.expo.app/products/1
+4. **PDP** with URL params (opens app with a sale): https://linking-example.expo.app/products/1?sale=true
