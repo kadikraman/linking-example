@@ -71,4 +71,28 @@ export default [
     imageSource: require("../assets/products/mug.jpeg"),
     price: 12,
   },
+  {
+    id: "10",
+    name: 'Backpack: "Cloud Sync"',
+    description:
+      "Weatherproof tech backpack with built-in solar panel for device charging. Multiple compartments, RFID-protected pockets, and a sleek futuristic design.",
+    imageSource: require("../assets/products/backpack.jpeg"),
+    price: 100,
+  },
+  {
+    id: "11",
+    name: 'Desk Mat: "Code Flow"',
+    description:
+      "Extended anti-slip desk mat featuring a luminous flowchart design. Smooth microfiber surface optimized for precision mouse movement and ergonomic wrist support.",
+    imageSource: require("../assets/products/deskmat.jpeg"),
+    price: 25,
+  },
+  {
+    id: "12",
+    name: 'Keyboard: "Hacker’s Edge"',
+    description:
+      "Mechanical keyboard with customizable RGB lighting and AI-assisted key remapping. Ultra-responsive switches designed for long coding marathons and rapid typing.",
+    imageSource: require("../assets/products/keyboard.jpeg"),
+    price: 120,
+  },
 ];
