@@ -19,7 +19,7 @@ See the corresponding YouTube Video here. (TODO)
 
 ## Try it yourself
 
-[Website](https://linking-example.expo.app) | iOS app | [Andorid app](https://expo.dev/accounts/expokadi/projects/linking-example/builds/7c4b06ca-8914-4bf1-94ed-c6b76b706c88)
+[Website](https://linking-example.expo.app) | [iOS app](https://testflight.apple.com/join/G12vd6Dd) | [Andorid app](https://expo.dev/accounts/expokadi/projects/linking-example/builds/7c4b06ca-8914-4bf1-94ed-c6b76b706c88)
 
 The following links were used in the video:
 
