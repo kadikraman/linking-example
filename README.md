@@ -2,7 +2,8 @@
 
 This is an example project, demonstrating how to set up [iOS Universal Links](https://docs.expo.dev/linking/ios-universal-links/) and [Android App Links](https://docs.expo.dev/linking/android-app-links/) on an Expo Router project.
 
-See the corresponding YouTube Video here. (TODO)
+> [!NOTE]
+> See also the [YouTube Video](https://www.youtube.com/watch?v=kNbEEYlFIPs) and [Blog Post](https://expo.dev/blog/universal-and-app-links)
 
 <img width="1368" alt="Screenshot 2025-01-29 at 14 48 40" src="https://github.com/user-attachments/assets/0bb6326c-a3e0-4bbe-94b7-05604c552261" />
 
