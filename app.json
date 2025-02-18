@@ -16,10 +16,13 @@
       },
       "supportsTablet": true,
       "bundleIdentifier": "com.expokadi.linking-example",
-      "associatedDomains": ["applinks:linking-example.expo.app"],
+      "associatedDomains": [
+        "applinks:linking-example.expo.app"
+      ],
       "config": {
         "usesNonExemptEncryption": false
-      }
+      },
+      "appleTeamId": "XQAX5LF48P"
     },
     "android": {
       "adaptiveIcon": {
